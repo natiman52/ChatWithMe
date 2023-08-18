@@ -2,9 +2,8 @@ import { PrismaClient } from "@prisma/client";
 import axios from "axios";
 
 
-
 export default async function handler(req,res){
-    if(req.method === "POST"){
+    if(req.method == "POST"){
         const prisma = new PrismaClient()
             const user = await prisma.user.findUnique({
                 where:{
