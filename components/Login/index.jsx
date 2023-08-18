@@ -12,7 +12,7 @@ export default function Login(props){
     const signIn =  async () => {
         if (username && password){
             setLoading(true)
-            await axios.post('https://chat-with-me-five.vercel.app/api/userfetch',{username,password}).then(e => {
+            await axios.post('/api/userfetch',{username,password}).then(e => {
                 props.setuser(e.data)
                 setLoading(false)
                 sessionStorage.setItem('user',JSON.stringify(e.data))
