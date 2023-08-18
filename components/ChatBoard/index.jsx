@@ -5,7 +5,7 @@ import {BsFillSendFill} from "react-icons/bs"
 import {io} from "socket.io-client"
 import { Circles } from "react-loader-spinner"
 let socket;
-export default function(props){
+export default function ChatBoard(props){
     const [Load,setLoad] = useState(false)
     const [Room,setRoom] = useState({})
     const [Message,setMessage] = useState("")

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Circles } from "react-loader-spinner"
 import axios from "axios"
-export default function(props){
+export default function SignUp(props){
     const [misMatchError,setMisMatchError] =useState(false)
     const [SignUpForm,setSignUpForm] =useState({username:"",password1:"",password2:""})
     const [SignUpEror,setSignUpError] =useState(false)
@@ -70,7 +70,7 @@ export default function(props){
                     <input onChange={e => EditSignUpForm(e,"password2")} id="password2" placeholder="Confirm Password" className={misMatchError ?`border-2 border-solid border-red-600 text-gray-700 rounded bg-gray-100 w-full focus:outline-none px-3 py-2 `:`text-gray-700 rounded bg-gray-100 w-full focus:outline-none px-3 py-2 `} type="password" />
                     {
                         misMatchError && (
-                            <p className="px-3 py-2 text-sm font-extrabold text-red-600">Passwords didn't match</p>
+                            <p className="px-3 py-2 text-sm font-extrabold text-red-600">Passwords did not match</p>
                         )
                     }
                 </div>

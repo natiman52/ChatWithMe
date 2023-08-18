@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import axios from "axios"
 import { Circles } from "react-loader-spinner"
 import SignUp from "../SignUp"
-export default function(props){
+export default function Login(props){
     const [Loading,setLoading] = useState(false)
     const [username,setUsername] =useState()
     const [password,setPassword] =useState()
@@ -66,7 +66,7 @@ export default function(props){
                     }
     </div>
     <div className="flex items-center justify-center my-5">
-        <p className="mr-2 text-lg font-thin">Doesn't have an account? </p>
+        <p className="mr-2 text-lg font-thin">Does not have an account? </p>
         <p className="text-lg font-semibold hover:text-blue-500 cursor-pointer" onClick={(e) => props.setToggle(prev => !prev) }>Sign up</p>
     </div>
             </div>

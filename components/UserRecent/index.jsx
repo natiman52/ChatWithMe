@@ -4,7 +4,7 @@ import axios from "axios"
 import { Circles } from "react-loader-spinner"
 import { io } from "socket.io-client";
 let socket;
-export default function(props) {
+export default function UserRecent(props) {
     const [Room,setRoom] = useState(false)
     const [Loading,setLoading] =useState(true)
     const [Users ,setUsers] = useState()

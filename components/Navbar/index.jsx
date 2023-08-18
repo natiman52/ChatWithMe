@@ -1,6 +1,6 @@
 import {RiLogoutBoxLine} from "react-icons/ri"
 
-export default function(props){
+export default function Navbar(props){
     const LogOut = () =>    {
         window.sessionStorage.clear()
     }
