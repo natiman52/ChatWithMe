@@ -1,0 +1,37 @@
+.app__mainContainer{
+    display: flex;
+    width: 100%;
+    @media screen and (max-width:468px) {
+        .app__side{
+            flex: 1;
+        }
+        .app__main{
+            display: none;
+        }
+        .userRecent-usercard-container{
+            display: none;
+            position: relative;
+        }
+    
+    }
+    @media screen and (min-width:468px) {
+        .userRecent-usercard-containerMb{
+            display: none;
+        }
+        .userRecent-usercard-container{
+            position: relative;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .userRecent__search-container{
+            label{
+                padding: 5px 10px 5px 10px;
+                color: gray;
+                font-weight: 600;
+                &:hover, &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}

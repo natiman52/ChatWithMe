@@ -1,0 +1,209 @@
+.Bold{
+    font-size: 50px;
+}
+
+.userRecent-usercard-item{
+    margin-bottom: 0.5rem;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    p{
+        color: gray;
+        margin-left: 5px;
+    }
+    &:hover{
+        background-color: lightblue;
+        cursor: pointer;
+        
+    }
+
+}
+.userRecent-usercard-item:last-child{
+    margin: 0;
+}
+.chatboard__initiat{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 100px;
+    }
+}
+.app__chatBoard{
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    background-color: #F0F8FF;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y:scroll;
+    .app_chatBoard-msgInput{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding:0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        button{
+            padding: 0.5rem;
+            background-color: blue;
+            margin-left:10px;
+            border-radius: 50%;
+            color: white;
+            
+        }
+        input{
+            border-radius: 5px;
+            padding: 0.1rem 1rem;
+            width: 100%;
+            border: 1px solid rgb(229, 229, 229);
+            &:hover,&:focus{
+                outline: none;
+            }
+        }
+    }
+    @media screen and (max-width:468px) {
+        height: 100vh;
+    }
+}
+.app__chatboard-msgContainer{
+    margin:2rem 1rem;
+    display: grid;
+    .app__chatboard-msgItem-nonUser{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        border-radius: 10%;
+    border-top-left-radius: 0%;
+        margin:1rem 0rem;
+        @media screen and (max-width:768px) {
+            width: 50%;
+        }
+        .flex__justify-between{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            p{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .msg-wrapper{
+            margin-top: 0.6rem;
+            margin-left: 10px;
+            background-color: #fff;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border-radius:50px ;
+            border-top-left-radius: 0%;
+            p{
+             font-size: 19px;
+             color: black;
+             font-weight: 500;
+             padding: 0rem 0.3rem;
+            }
+        }
+    }
+    .app__chatboard-msgItem-User{
+        justify-self:end;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        border-radius: 10%;
+    border-top-left-radius: 0%;
+        margin:1rem 0rem;
+        @media screen and (max-width:768px) {
+            width: 50%;
+        }
+        .flex__justify-between{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            p{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .msg-wrapper{
+            margin-top: 0.6rem;
+            margin-right: 10px;
+            background-color: lightblue;
+            width: 100%;
+            padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+            border-radius:50px ;
+            border-top-right-radius: 0%;
+            p{
+             font-size: 19px;
+             color: black;
+             font-weight: 500;
+             padding: 0rem 0.3rem;
+            }
+        }
+    }
+}
+.Login__centeralwrapper{
+    height: 100Vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.LoginForm__container{
+    padding:1rem;
+    border-radius: 10px;
+    width:50%;
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    @media screen and (max-width:998px) {
+        width: 60%;
+    }
+    @media screen and (max-width:768px) {
+        width: 80%;
+    }
+    @media screen and (max-width:458px) {
+        width:90%;
+    }
+}
+.flex--end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+.chatBoard-profile{
+
+    width: 100%;
+    background-color: #034c67;
+    color: white;
+    padding: 1rem;
+    @media screen and (max-width:468px) {
+        padding: 0.5rem;
+    }
+}
+.userRecent__search-container{
+    padding: 10px 0px 10px 0;
+    width: 100%;
+    text-align: center;
+    label{
+        position: relative;
+        width: 80%;
+        input{
+            border:1px solid gray;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: gray;
+            font-weight: 600;
+        }
+    }
+}
